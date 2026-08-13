@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
+import QuickDiagnostic from "@/components/QuickDiagnostic";
 import ServicesGrid from "@/components/ServicesGrid";
 import WhyUs from "@/components/WhyUs";
 import ServiceArea from "@/components/ServiceArea";
@@ -8,9 +9,9 @@ import CTABanner from "@/components/CTABanner";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Plumber in Mattoon, IL | Fast, Local, Trusted Service",
+  title: "Plumber in Mattoon & Charleston, IL | Fast, Local, Trusted Service",
   description:
-    "Need a plumber in Mattoon, IL? Get connected with a trusted local plumber for emergency repairs, drain cleaning, water heaters, and more. Call now.",
+    "Need a plumber in Mattoon or Charleston, IL? Get connected with fast, reliable plumbing repair, emergency service, drain cleaning, and water heater help.",
   alternates: {
     canonical: "/",
   },
@@ -21,6 +22,7 @@ export default function HomePage() {
     <>
       <JsonLd />
       <Hero />
+      <QuickDiagnostic />
       <ServicesGrid />
       <WhyUs />
       <ServiceArea />
