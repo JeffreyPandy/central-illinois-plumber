@@ -4,11 +4,11 @@ const points = [
   {
     title: "Local to Coles County",
     description:
-      "Real familiarity with Mattoon homes and the plumbing issues common to this area.",
+      "Real familiarity with Mattoon and Charleston homes and the plumbing issues common to this area.",
   },
   {
     title: "Fast response times",
-    description: "Plumbing problems don't wait, and neither should you.",
+    description: "Plumbing problems don't wait, and neither do we.",
   },
   {
     title: "Straightforward pricing",
@@ -16,7 +16,7 @@ const points = [
   },
   {
     title: "No obligation quotes",
-    description: "Get connected and decide with no pressure.",
+    description: "Get your quote and decide with no pressure.",
   },
 ];
 
@@ -26,7 +26,7 @@ export default function WhyUs() {
       <div className="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-3xl font-bold text-slate-900">
-            Why Mattoon Homeowners Choose Us
+            Why Homeowners Choose Us
           </h2>
           <ul className="mt-8 space-y-6">
             {points.map((point) => (
@@ -42,7 +42,7 @@ export default function WhyUs() {
         <div className="relative h-80 rounded-xl overflow-hidden">
           <Image
             src="/images/plumber-bathroom.jpg"
-            alt="Plumber performing bathroom plumbing repair in a Mattoon IL home"
+            alt="Plumber performing bathroom plumbing repair in a Coles County IL home"
             fill
             className="object-cover"
           />

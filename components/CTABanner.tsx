@@ -5,10 +5,9 @@ export default function CTABanner() {
   return (
     <section className="bg-blue-900 text-white">
       <div className="max-w-4xl mx-auto px-4 py-16 text-center">
-        <h2 className="text-3xl font-bold">Need a Plumber in Mattoon Today?</h2>
+        <h2 className="text-3xl font-bold">Need a Plumber Today?</h2>
         <p className="mt-3 text-blue-100">
-          Get connected with a trusted local plumbing professional in
-          minutes.
+          Reach out and we'll get your plumbing problem solved, fast.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Link

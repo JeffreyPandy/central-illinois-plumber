@@ -1,19 +1,31 @@
 export const siteConfig = {
   name: "Central Illinois Plumber",
+  domain: "centralillinoisplumber.com",
   url: "https://centralillinoisplumber.com",
+  phone: "(217) 555-0100", // TODO: replace with real tracked phone number before launch
+  phoneRaw: "+12175550100", // TODO: replace with real number in E.164 format
+  tagline: "Fast, Reliable Plumbing Repair",
   description:
-    "Trusted local plumbers serving Mattoon, IL and Coles County. Fast response for emergency repairs, drain cleaning, water heaters, and more.",
-  phone: "(217) 555-0100",
-  phoneRaw: "+12175550100",
+    "Central Illinois Plumber provides fast, reliable residential plumbing service in Mattoon and Charleston, IL, including emergency repairs, drain cleaning, water heaters, leak detection, and sewer line service.",
 };
 
 export const cities = [
-  { slug: "mattoon", displayName: "Mattoon, IL" },
-  { slug: "charleston", displayName: "Charleston, IL" },
-  { slug: "oakland", displayName: "Oakland, IL" },
-  { slug: "ashmore", displayName: "Ashmore, IL" },
-  { slug: "humboldt", displayName: "Humboldt, IL" },
-  { slug: "lerna", displayName: "Lerna, IL" },
+  {
+    slug: "mattoon-il",
+    name: "Mattoon",
+    state: "IL",
+    displayName: "Mattoon, IL",
+    county: "Coles County",
+    zipCodes: ["61938"],
+  },
+  {
+    slug: "charleston-il",
+    name: "Charleston",
+    state: "IL",
+    displayName: "Charleston, IL",
+    county: "Coles County",
+    zipCodes: ["61920"],
+  },
 ];
 
 export const services = [
@@ -21,65 +33,65 @@ export const services = [
     slug: "emergency-plumbing",
     name: "Emergency Plumbing",
     shortDescription:
-      "Burst pipes, overflowing toilets, no hot water — get help fast when it can't wait.",
+      "Burst pipe, no hot water, or a backed-up drain at the worst possible time? We answer emergency calls fast, because a small leak doesn't stay small for long.",
     icon: "AlertTriangle",
   },
   {
     slug: "drain-cleaning",
-    name: "Drain Cleaning",
+    name: "Drain Cleaning & Clogs",
     shortDescription:
-      "Clear clogged sinks, tubs, showers, and main lines with professional drain service.",
+      "Slow drains, clogged toilets, and backed-up kitchen sinks handled quickly so your home gets back to normal.",
     icon: "Droplets",
   },
   {
     slug: "water-heater",
-    name: "Water Heater Repair & Install",
+    name: "Water Heater Repair & Installation",
     shortDescription:
-      "Repair, replace, or install traditional tank and tankless water heaters.",
+      "From a water heater that's stopped heating to a full replacement, we diagnose and fix it without the guesswork.",
     icon: "Flame",
   },
   {
     slug: "leak-detection",
-    name: "Leak Detection",
+    name: "Leak Detection & Repair",
     shortDescription:
-      "Find and fix hidden leaks before they cause serious water damage to your home.",
+      "Hidden leaks cause real damage over time. We find and fix leaks before they turn into a bigger, more expensive problem.",
     icon: "Search",
   },
   {
-    slug: "plumbing-repair",
-    name: "Plumbing Repair",
+    slug: "sewer-line",
+    name: "Sewer Line Services",
     shortDescription:
-      "Fixture repairs, faucet replacement, and general residential plumbing fixes.",
+      "Sewer backups and line issues handled with the right equipment and experience, not a shot in the dark.",
     icon: "Wrench",
   },
   {
-    slug: "installations",
-    name: "Installations & Remodels",
+    slug: "general-repair",
+    name: "General Plumbing Repair",
     shortDescription:
-      "New fixtures, bathroom and kitchen remodels, and full plumbing installations.",
+      "Running toilets, dripping faucets, low water pressure, and everyday plumbing issues, taken care of properly the first time.",
     icon: "Settings",
   },
 ];
 
 export const faqs = [
   {
-    question: "How quickly can a plumber get to my home in Mattoon?",
+    question: "How fast can you get to my home?",
     answer:
-      "For most emergency calls in Mattoon and Coles County, a local plumber can typically be dispatched the same day. Response times depend on current workload and the nature of the issue.",
+      "Response times depend on availability and the nature of the issue, but emergency calls are prioritized. Reach out and we'll get you an answer quickly.",
   },
   {
-    question: "Do you offer free quotes?",
+    question: "Do you offer emergency plumbing service?",
     answer:
-      "Yes. Submit your request through the form and you'll be connected with a local plumber for a no-obligation quote on your job.",
+      "Yes. Plumbing emergencies like burst pipes, major leaks, and sewer backups are handled as a priority, day or night.",
   },
   {
-    question: "What areas do you serve?",
+    question: "How much will my repair cost?",
     answer:
-      "We connect homeowners across Mattoon, Charleston, and the surrounding Coles County area with trusted local plumbing professionals.",
+      "Every job is different. You'll get a clear quote before any work begins, so there are no surprises.",
   },
   {
-    question: "Do you handle after-hours emergencies?",
+    question: "Do you serve areas outside Mattoon and Charleston?",
     answer:
-      "Yes. Emergency plumbing help is available after hours for burst pipes, major leaks, and other urgent issues that can't wait until morning.",
+      "We're expanding across Coles County and Central Illinois. Reach out and let us know your location.",
   },
 ];

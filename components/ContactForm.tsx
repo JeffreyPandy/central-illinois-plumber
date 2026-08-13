@@ -22,7 +22,7 @@ export default function ContactForm() {
           Request received.
         </h3>
         <p className="text-green-700 mt-1">
-          A local plumber will be in touch with you shortly.
+          We'll be in touch with you shortly.
         </p>
       </div>
     );
@@ -31,7 +31,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
+        <label htmlFor="name" className="block text-sm font-medium text-slate-800 mb-1">
           Name
         </label>
         <input
@@ -44,7 +44,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1">
+        <label htmlFor="phone" className="block text-sm font-medium text-slate-800 mb-1">
           Phone Number
         </label>
         <input
@@ -57,7 +57,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
+        <label htmlFor="email" className="block text-sm font-medium text-slate-800 mb-1">
           Email (optional)
         </label>
         <input
@@ -69,7 +69,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="city" className="block text-sm font-medium text-slate-700 mb-1">
+        <label htmlFor="city" className="block text-sm font-medium text-slate-800 mb-1">
           City You Need Service In
         </label>
         <select
@@ -91,7 +91,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="service" className="block text-sm font-medium text-slate-700 mb-1">
+        <label htmlFor="service" className="block text-sm font-medium text-slate-800 mb-1">
           What Do You Need Help With?
         </label>
         <select
@@ -114,15 +114,15 @@ export default function ContactForm() {
       </div>
 
       <fieldset>
-        <legend className="block text-sm font-medium text-slate-700 mb-1">
+        <legend className="block text-sm font-medium text-slate-800 mb-1">
           Is this an emergency?
         </legend>
         <div className="flex gap-4">
-          <label className="flex items-center gap-2">
+          <label className="flex items-center gap-2 text-slate-800">
             <input type="radio" name="isEmergency" value="yes" required />
             Yes
           </label>
-          <label className="flex items-center gap-2">
+          <label className="flex items-center gap-2 text-slate-800">
             <input type="radio" name="isEmergency" value="no" />
             No
           </label>
@@ -130,7 +130,7 @@ export default function ContactForm() {
       </fieldset>
 
       <div>
-        <label htmlFor="description" className="block text-sm font-medium text-slate-700 mb-1">
+        <label htmlFor="description" className="block text-sm font-medium text-slate-800 mb-1">
           Brief Description (optional)
         </label>
         <textarea
@@ -148,9 +148,9 @@ export default function ContactForm() {
         Get My Free Quote
       </button>
 
-      <p className="text-xs text-slate-500 text-center">
-        Your information is only used to connect you with a local plumber. No
-        spam, no sharing your info with multiple companies.
+      <p className="text-xs text-slate-600 text-center">
+        Your information goes straight to our team. No spam, no sharing with
+        other companies.
       </p>
     </form>
   );

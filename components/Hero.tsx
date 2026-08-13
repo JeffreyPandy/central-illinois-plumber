@@ -16,11 +16,11 @@ export default function Hero() {
       </div>
       <div className="relative max-w-6xl mx-auto px-4 py-24 sm:py-32 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
-          Trusted Plumbers Serving Mattoon, Illinois
+          Trusted Plumbers Serving Mattoon & Charleston, Illinois
         </h1>
         <p className="mt-4 text-lg sm:text-xl text-blue-100 max-w-2xl mx-auto">
-          Fast response. Local expertise. No runaround. Get connected with a
-          Mattoon-area plumber today.
+          Fast response. Local expertise. No runaround. Reach out and we'll
+          get your plumbing problem solved.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
