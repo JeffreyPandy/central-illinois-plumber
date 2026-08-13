@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
-import QuickDiagnostic from "@/components/QuickDiagnostic";
 import ServicesGrid from "@/components/ServicesGrid";
 import WhyUs from "@/components/WhyUs";
 import ServiceArea from "@/components/ServiceArea";
@@ -22,7 +21,6 @@ export default function HomePage() {
     <>
       <JsonLd />
       <Hero />
-      <QuickDiagnostic />
       <ServicesGrid />
       <WhyUs />
       <ServiceArea />

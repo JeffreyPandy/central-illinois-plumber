@@ -212,6 +212,186 @@ export const servicePages: ServicePageData[] = [
     closingNote:
       "Tell us what you're seeing and we'll help you figure out if this is a quick repair or worth replacing, before you spend money on the wrong fix.",
   },
+  {
+    slug: "leak-detection-mattoon-il",
+    serviceName: "Leak Detection & Repair",
+    citySlug: "mattoon-il",
+    cityDisplayName: "Mattoon, IL",
+    metaTitle: "Leak Detection in Mattoon, IL | Find Hidden Water Leaks",
+    metaDescription:
+      "Unexplained high water bill or musty smell in your Mattoon, IL home? Learn the signs of a hidden leak and how to confirm one before it causes damage.",
+    heading: "Leak Detection & Repair in Mattoon, IL",
+    intro:
+      "The most expensive leaks are the ones you can't see. A pipe behind a wall or under the slab can run for weeks before it shows up as visible damage. Here's what to watch for.",
+    diagnosticTitle: "Signs of a hidden leak",
+    diagnosticIntro: "",
+    signs: [
+      "Your water bill jumped with no real change in how much water you're using",
+      "You hear running water somewhere in the house when everything is off",
+      "A warm or unexpectedly cold spot on the floor, often a sign of a leaking line under a slab",
+      "A musty smell in a room that should be dry, with no obvious source",
+      "Water stains or discoloration on a wall or ceiling",
+      "Your water meter's flow indicator is still moving when nothing is using water",
+    ],
+    actionTitle: "The 20-minute meter test",
+    actionSteps: [
+      "Turn off every faucet, appliance, and fixture in the house, nothing running, nothing flushing",
+      "Write down your water meter reading, or note whether the small flow indicator is spinning",
+      "Wait 20 minutes without using any water",
+      "Check the meter again, if the reading changed or the indicator is still moving, water is escaping somewhere",
+    ],
+    closingNote:
+      "Hidden and slab leaks generally aren't something you can pinpoint yourself. If the meter test comes back positive, reach out and we'll help track down exactly where it's coming from.",
+  },
+  {
+    slug: "leak-detection-charleston-il",
+    serviceName: "Leak Detection & Repair",
+    citySlug: "charleston-il",
+    cityDisplayName: "Charleston, IL",
+    metaTitle: "Leak Detection in Charleston, IL | Find Hidden Water Leaks",
+    metaDescription:
+      "Unexplained high water bill or musty smell in your Charleston, IL home? Learn the signs of a hidden leak and how to confirm one before it causes damage.",
+    heading: "Leak Detection & Repair in Charleston, IL",
+    intro:
+      "The most expensive leaks are the ones you can't see. A pipe behind a wall or under the slab can run for weeks before it shows up as visible damage. Here's what to watch for.",
+    diagnosticTitle: "Signs of a hidden leak",
+    diagnosticIntro: "",
+    signs: [
+      "Your water bill jumped with no real change in how much water you're using",
+      "You hear running water somewhere in the house when everything is off",
+      "A warm or unexpectedly cold spot on the floor, often a sign of a leaking line under a slab",
+      "A musty smell in a room that should be dry, with no obvious source",
+      "Water stains or discoloration on a wall or ceiling",
+      "Your water meter's flow indicator is still moving when nothing is using water",
+    ],
+    actionTitle: "The 20-minute meter test",
+    actionSteps: [
+      "Turn off every faucet, appliance, and fixture in the house, nothing running, nothing flushing",
+      "Write down your water meter reading, or note whether the small flow indicator is spinning",
+      "Wait 20 minutes without using any water",
+      "Check the meter again, if the reading changed or the indicator is still moving, water is escaping somewhere",
+    ],
+    closingNote:
+      "Hidden and slab leaks generally aren't something you can pinpoint yourself. If the meter test comes back positive, reach out and we'll help track down exactly where it's coming from.",
+  },
+  {
+    slug: "sewer-line-mattoon-il",
+    serviceName: "Sewer Line Services",
+    citySlug: "mattoon-il",
+    cityDisplayName: "Mattoon, IL",
+    metaTitle: "Sewer Line Repair in Mattoon, IL | Backups & Root Intrusion",
+    metaDescription:
+      "Recurring clogs or sewage backups in your Mattoon, IL home? Learn the warning signs of a main sewer line problem and what actually needs to happen next.",
+    heading: "Sewer Line Services in Mattoon, IL",
+    intro:
+      "A main sewer line problem doesn't always show up as an obvious flood. Often it starts small and keeps coming back, especially in older homes with mature trees nearby.",
+    diagnosticTitle: "Signs your main sewer line needs attention",
+    diagnosticIntro: "",
+    signs: [
+      "Multiple drains backing up around the same time, not just one fixture",
+      "Sewage smell near drains or out in the yard",
+      "Soggy, unusually green patches of grass or small dips in the yard along where the line runs",
+      "Gurgling in one fixture when you use a completely different one",
+      "Toilets across the whole house are sluggish, not just one",
+      "The same clog keeps coming back within days or weeks of being cleared, which often points to tree root intrusion in older pipes, common throughout Coles County",
+    ],
+    actionTitle: "What actually needs to happen",
+    actionSteps: [
+      "Repeated clogs in the same spot usually mean the underlying cause hasn't been found yet, not that the clog is stubborn",
+      "A camera inspection is the only reliable way to see what's actually going on inside an underground line",
+      "Avoid DIY snaking past a certain point, it can push the real problem further down the line without fixing it",
+    ],
+    closingNote:
+      "If clogs keep coming back or you're seeing more than one of these signs, it's worth having the line properly inspected instead of clearing the same symptom over and over.",
+  },
+  {
+    slug: "sewer-line-charleston-il",
+    serviceName: "Sewer Line Services",
+    citySlug: "charleston-il",
+    cityDisplayName: "Charleston, IL",
+    metaTitle: "Sewer Line Repair in Charleston, IL | Backups & Root Intrusion",
+    metaDescription:
+      "Recurring clogs or sewage backups in your Charleston, IL home? Learn the warning signs of a main sewer line problem and what actually needs to happen next.",
+    heading: "Sewer Line Services in Charleston, IL",
+    intro:
+      "A main sewer line problem doesn't always show up as an obvious flood. Often it starts small and keeps coming back, especially in Charleston's older homes near mature tree-lined streets.",
+    diagnosticTitle: "Signs your main sewer line needs attention",
+    diagnosticIntro: "",
+    signs: [
+      "Multiple drains backing up around the same time, not just one fixture",
+      "Sewage smell near drains or out in the yard",
+      "Soggy, unusually green patches of grass or small dips in the yard along where the line runs",
+      "Gurgling in one fixture when you use a completely different one",
+      "Toilets across the whole house are sluggish, not just one",
+      "The same clog keeps coming back within days or weeks of being cleared, which often points to tree root intrusion in older pipes, common throughout Coles County",
+    ],
+    actionTitle: "What actually needs to happen",
+    actionSteps: [
+      "Repeated clogs in the same spot usually mean the underlying cause hasn't been found yet, not that the clog is stubborn",
+      "A camera inspection is the only reliable way to see what's actually going on inside an underground line",
+      "Avoid DIY snaking past a certain point, it can push the real problem further down the line without fixing it",
+    ],
+    closingNote:
+      "If clogs keep coming back or you're seeing more than one of these signs, it's worth having the line properly inspected instead of clearing the same symptom over and over.",
+  },
+  {
+    slug: "general-repair-mattoon-il",
+    serviceName: "General Plumbing Repair",
+    citySlug: "mattoon-il",
+    cityDisplayName: "Mattoon, IL",
+    metaTitle: "General Plumbing Repair in Mattoon, IL | Faucets, Toilets & More",
+    metaDescription:
+      "Running toilet, dripping faucet, or low water pressure in your Mattoon, IL home? Small plumbing problems add up fast, here's what's likely going on.",
+    heading: "General Plumbing Repair in Mattoon, IL",
+    intro:
+      "Not everything is an emergency or a big job. Most of what we fix day to day is the everyday stuff that quietly wastes water and money the longer it's ignored.",
+    diagnosticTitle: "Common issues and what they usually mean",
+    diagnosticIntro: "",
+    signs: [
+      "Toilet running constantly or flushing on its own: usually a worn flapper valve, and it can waste far more water than people expect",
+      "Faucet still dripping after it's fully shut off: typically a worn washer or cartridge inside the fixture",
+      "Low water pressure at one specific faucet or shower: often just a clogged aerator or showerhead, an easy fix",
+      "Low water pressure throughout the entire house: usually points to a bigger issue with the main supply line, not a single fixture",
+      "Toilet that rocks or leaks around the base: the wax ring seal underneath has likely failed",
+    ],
+    actionTitle: "Worth fixing sooner than later",
+    actionSteps: [
+      "A running toilet can waste hundreds of gallons a day without you noticing",
+      "A dripping faucet adds up on your water bill more than it seems like it should",
+      "None of these are emergencies, but they don't get better on their own either",
+    ],
+    closingNote:
+      "Whatever it is, tell us what's going on and we'll get it taken care of properly, no upsell, no runaround.",
+  },
+  {
+    slug: "general-repair-charleston-il",
+    serviceName: "General Plumbing Repair",
+    citySlug: "charleston-il",
+    cityDisplayName: "Charleston, IL",
+    metaTitle: "General Plumbing Repair in Charleston, IL | Faucets, Toilets & More",
+    metaDescription:
+      "Running toilet, dripping faucet, or low water pressure in your Charleston, IL home? Small plumbing problems add up fast, here's what's likely going on.",
+    heading: "General Plumbing Repair in Charleston, IL",
+    intro:
+      "Not everything is an emergency or a big job. Most of what we fix day to day is the everyday stuff that quietly wastes water and money the longer it's ignored.",
+    diagnosticTitle: "Common issues and what they usually mean",
+    diagnosticIntro: "",
+    signs: [
+      "Toilet running constantly or flushing on its own: usually a worn flapper valve, and it can waste far more water than people expect",
+      "Faucet still dripping after it's fully shut off: typically a worn washer or cartridge inside the fixture",
+      "Low water pressure at one specific faucet or shower: often just a clogged aerator or showerhead, an easy fix",
+      "Low water pressure throughout the entire house: usually points to a bigger issue with the main supply line, not a single fixture",
+      "Toilet that rocks or leaks around the base: the wax ring seal underneath has likely failed",
+    ],
+    actionTitle: "Worth fixing sooner than later",
+    actionSteps: [
+      "A running toilet can waste hundreds of gallons a day without you noticing",
+      "A dripping faucet adds up on your water bill more than it seems like it should",
+      "None of these are emergencies, but they don't get better on their own either",
+    ],
+    closingNote:
+      "Whatever it is, tell us what's going on and we'll get it taken care of properly, no upsell, no runaround.",
+  },
 ];
 
 export function getServicePage(slug: string): ServicePageData | undefined {
