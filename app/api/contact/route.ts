@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { resend } from "@/lib/resend";
 import { getLeadEmailForCity } from "@/lib/cityEmailMap";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig, cities } from "@/lib/siteConfig";
 
 interface ContactPayload {
   name: string;
@@ -33,11 +33,14 @@ export async function POST(req: NextRequest) {
     const toEmail = getLeadEmailForCity(body.city);
     const emergencyLabel = body.isEmergency ? "YES — EMERGENCY" : "No";
 
+    const matchedCity = cities.find((c) => c.slug === body.city);
+    const cityDisplayName = matchedCity ? matchedCity.displayName : body.city;
+
     await resend.emails.send({
       from: `${siteConfig.name} Leads <${process.env.RESEND_FROM_EMAIL}>`,
       to: toEmail,
       replyTo: body.email || undefined,
-      subject: `New Lead: ${body.city} — ${body.service}${
+      subject: `New Lead: ${cityDisplayName} — ${body.service}${
         body.isEmergency ? " (EMERGENCY)" : ""
       }`,
       text: `New lead submitted on ${siteConfig.domain}
@@ -45,7 +48,7 @@ export async function POST(req: NextRequest) {
 Name: ${body.name}
 Phone: ${body.phone}
 Email: ${body.email || "Not provided"}
-City: ${body.city}
+City: ${cityDisplayName}
 Service Needed: ${body.service}
 Emergency: ${emergencyLabel}
 
