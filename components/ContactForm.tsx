@@ -184,6 +184,24 @@ export default function ContactForm() {
         />
       </div>
 
+      <div className="flex items-start gap-3">
+        <input
+          id="consent"
+          name="consent"
+          type="checkbox"
+          required
+          className="mt-1"
+        />
+        <label htmlFor="consent" className="text-sm text-slate-700">
+          I agree to be contacted by phone, text, or email regarding my
+          request, and I've read the{" "}
+          <a href="/privacy-policy" target="_blank" className="text-blue-700 underline">
+            Privacy Policy
+          </a>
+          .
+        </label>
+      </div>
+
       {state === "error" && (
         <p className="text-red-600 text-sm">{errorMessage}</p>
       )}

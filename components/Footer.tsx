@@ -26,7 +26,12 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
             reserved.
           </p>
-          <p>Serving Mattoon, IL and Charleston, IL</p>
+          <p>
+            Serving Mattoon, IL and Charleston, IL &middot;{" "}
+            <a href="/privacy-policy" className="hover:text-white underline">
+              Privacy Policy
+            </a>
+          </p>
         </div>
       </div>
     </footer>
