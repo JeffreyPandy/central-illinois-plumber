@@ -95,7 +95,7 @@ export default function ContactForm() {
           name="name"
           type="text"
           required
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         />
       </div>
 
@@ -108,7 +108,7 @@ export default function ContactForm() {
           name="phone"
           type="tel"
           required
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         />
       </div>
 
@@ -120,7 +120,7 @@ export default function ContactForm() {
           id="email"
           name="email"
           type="email"
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         />
       </div>
 
@@ -133,7 +133,7 @@ export default function ContactForm() {
           name="city"
           required
           defaultValue=""
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600"
         >
           <option value="" disabled>
             Select your city
@@ -155,7 +155,7 @@ export default function ContactForm() {
           name="service"
           required
           defaultValue=""
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600"
         >
           <option value="" disabled>
             Select a service
@@ -193,7 +193,7 @@ export default function ContactForm() {
           id="description"
           name="description"
           rows={4}
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         />
       </div>
 
