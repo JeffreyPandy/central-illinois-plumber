@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { cities, services } from "@/lib/siteConfig";
+import { cities, services, siteConfig } from "@/lib/siteConfig";
 
 type SubmitState = "idle" | "loading" | "success" | "error";
 
@@ -62,7 +62,14 @@ export default function ContactForm() {
           Request received.
         </h3>
         <p className="text-green-700 mt-1">
-          We'll be in touch with you shortly.
+          We'll be in touch with you within 20 minutes.
+        </p>
+        <p className="text-green-800 mt-3 text-sm">
+          If this is an emergency, please call us right away at{" "}
+          <a href={`tel:${siteConfig.phoneRaw}`} className="font-semibold underline">
+            {siteConfig.phone}
+          </a>
+          .
         </p>
       </div>
     );

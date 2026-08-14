@@ -18,8 +18,8 @@ export default function ContactPage() {
           Request Plumbing Service
         </h1>
         <p className="mt-3 text-slate-800 text-center">
-          Fill out the form below and we'll be in touch to help with your
-          plumbing issue.
+          Fill out the form below and we'll be in touch right away to help
+          with your plumbing issue.
         </p>
         <div className="mt-10">
           <ContactForm />
