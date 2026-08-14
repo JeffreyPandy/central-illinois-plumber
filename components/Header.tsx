@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X, Phone } from "lucide-react";
 import { siteConfig, services } from "@/lib/siteConfig";
 import { serviceLinks } from "@/lib/serviceLinks";
 
@@ -67,6 +67,13 @@ export default function Header() {
             className="hidden sm:inline-block text-blue-900 font-semibold"
           >
             {siteConfig.phone}
+          </a>
+          <a
+            href={`tel:${siteConfig.phoneRaw}`}
+            className="sm:hidden text-blue-900"
+            aria-label={`Call ${siteConfig.phone}`}
+          >
+            <Phone className="w-5 h-5" />
           </a>
           <Link
             href="/contact"

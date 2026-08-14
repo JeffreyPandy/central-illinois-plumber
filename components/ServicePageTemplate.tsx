@@ -6,8 +6,8 @@ import { siteConfig } from "@/lib/siteConfig";
 export default function ServicePageTemplate({ data }: { data: ServicePageData }) {
   return (
     <section className="bg-white">
-      <div className="max-w-3xl mx-auto px-4 py-16">
-        <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">
+      <div className="max-w-3xl mx-auto px-4 py-10 sm:py-16">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900">
           {data.heading}
         </h1>
         <p className="mt-4 text-lg text-slate-700 leading-relaxed">

@@ -11,10 +11,16 @@ export default function ContactForm() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    // Capture the form reference BEFORE any await, currentTarget becomes
+    // null after the event finishes dispatching, which happens as soon as
+    // this function hits its first await.
+    const form = e.currentTarget;
+
     setState("loading");
     setErrorMessage("");
 
-    const formData = new FormData(e.currentTarget);
+    const formData = new FormData(form);
     const payload = {
       name: formData.get("name") as string,
       phone: formData.get("phone") as string,
@@ -40,7 +46,7 @@ export default function ContactForm() {
       }
 
       setState("success");
-      e.currentTarget.reset();
+      form.reset();
     } catch (err) {
       setState("error");
       setErrorMessage(
@@ -82,7 +88,7 @@ export default function ContactForm() {
           name="name"
           type="text"
           required
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         />
       </div>
 
@@ -95,7 +101,7 @@ export default function ContactForm() {
           name="phone"
           type="tel"
           required
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         />
       </div>
 
@@ -107,7 +113,7 @@ export default function ContactForm() {
           id="email"
           name="email"
           type="email"
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         />
       </div>
 
@@ -120,7 +126,7 @@ export default function ContactForm() {
           name="city"
           required
           defaultValue=""
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600"
         >
           <option value="" disabled>
             Select your city
@@ -142,7 +148,7 @@ export default function ContactForm() {
           name="service"
           required
           defaultValue=""
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600"
         >
           <option value="" disabled>
             Select a service
@@ -161,11 +167,11 @@ export default function ContactForm() {
           Is this an emergency?
         </legend>
         <div className="flex gap-4">
-          <label className="flex items-center gap-2 text-slate-800">
+          <label className="flex items-center gap-2 text-slate-900">
             <input type="radio" name="isEmergency" value="yes" required />
             Yes
           </label>
-          <label className="flex items-center gap-2 text-slate-800">
+          <label className="flex items-center gap-2 text-slate-900">
             <input type="radio" name="isEmergency" value="no" />
             No
           </label>
@@ -180,7 +186,7 @@ export default function ContactForm() {
           id="description"
           name="description"
           rows={4}
-          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
         />
       </div>
 
@@ -209,7 +215,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={state === "loading"}
-        className="w-full rounded-lg bg-blue-700 hover:bg-blue-800 disabled:opacity-60 text-white font-semibold py-3 transition-colors"
+        className="w-full rounded-lg bg-blue-700 hover:bg-blue-800 disabled:opacity-60 text-white font-semibold py-3.5 text-base transition-colors"
       >
         {state === "loading" ? "Sending..." : "Get My Free Quote"}
       </button>
