@@ -2,8 +2,8 @@ export const siteConfig = {
   name: "Central Illinois Plumber",
   domain: "centralillinoisplumber.com",
   url: "https://centralillinoisplumber.com",
-  phone: "(217) 555-0100", // TODO: replace with real tracked phone number before launch
-  phoneRaw: "+12175550100", // TODO: replace with real number in E.164 format
+  phone: "(765) 505-4233",
+  phoneRaw: "+17655054233",
   tagline: "Fast, Reliable Plumbing Repair",
   description:
     "Central Illinois Plumber provides fast, reliable residential plumbing service in Mattoon and Charleston, IL, including emergency repairs, drain cleaning, water heaters, leak detection, and sewer line service.",
