@@ -3,16 +3,50 @@
 import { useState } from "react";
 import { cities, services } from "@/lib/siteConfig";
 
-type SubmitState = "idle" | "success";
+type SubmitState = "idle" | "loading" | "success" | "error";
 
 export default function ContactForm() {
   const [state, setState] = useState<SubmitState>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: wire this up to send an email once Resend is set up.
-    setState("success");
-    e.currentTarget.reset();
+    setState("loading");
+    setErrorMessage("");
+
+    const formData = new FormData(e.currentTarget);
+    const payload = {
+      name: formData.get("name") as string,
+      phone: formData.get("phone") as string,
+      email: formData.get("email") as string,
+      city: formData.get("city") as string,
+      service: formData.get("service") as string,
+      isEmergency: formData.get("isEmergency") === "yes",
+      description: formData.get("description") as string,
+      website: formData.get("website") as string, // honeypot
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || "Submission failed.");
+      }
+
+      setState("success");
+      e.currentTarget.reset();
+    } catch (err) {
+      setState("error");
+      setErrorMessage(
+        err instanceof Error ? err.message : "Something went wrong."
+      );
+    }
   }
 
   if (state === "success") {
@@ -30,6 +64,15 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        className="hidden"
+        aria-hidden="true"
+      />
+
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-slate-800 mb-1">
           Name
@@ -141,11 +184,16 @@ export default function ContactForm() {
         />
       </div>
 
+      {state === "error" && (
+        <p className="text-red-600 text-sm">{errorMessage}</p>
+      )}
+
       <button
         type="submit"
-        className="w-full rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 transition-colors"
+        disabled={state === "loading"}
+        className="w-full rounded-lg bg-blue-700 hover:bg-blue-800 disabled:opacity-60 text-white font-semibold py-3 transition-colors"
       >
-        Get My Free Quote
+        {state === "loading" ? "Sending..." : "Get My Free Quote"}
       </button>
 
       <p className="text-xs text-slate-600 text-center">
